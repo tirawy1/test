@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Star App</title>
+	<link rel="stylesheet" href="themes/flat.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+
+	<link rel="stylesheet" type="text/css" href="scripts/jquery.mobile-1.4.2.min.css" />
+	<script src="scripts/jquery-1.9.1.min.js"></script>
+	<script src="scripts/jquery.mobile-1.4.2.min.js"></script>
+</head>
+
+<body>
+	<!--*************************-->
+	<!--*****	home page	*****-->
+	<!--*************************-->
+	<div data-role="page" id="homePage" data-theme="e">
+		<div data-role="header">
+			<h1>Star Catalog App</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#homePage" data-icon="grid" data-transition="flow">Home</a></li>
+					<li><a href="#infoPage" data-icon="grid" data-transition="flow">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="main" class="ui-content">
+			<h1>Hello User</h1>
+			<p>Welcome to Star App by Ali</p>
+			<div data-role="collapsible">
+				<h1>About us</h1>
+				<p>Rammallah leading company</p>
+			</div>
+			<div data-role="collapsible">
+				<h1>Place</h1>
+				<p>Rammallah betonia</p>
+			</div>
+			
+		</div>
+		<div data-role="footer">
+			<h1>&copy; Star Co. 2014</h1>
+		</div>
+	</div>
+	
+	<!--*************************-->
+	<!--*****	Info page	*****-->
+	<!--*************************-->
+	<div data-role="page" id="infoPage" data-theme="e">
+		<div data-role="header">
+			<h1>Info page</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#homePage" data-icon="grid" data-transition="flow">Home</a></li>
+					<li><a href="#infoPage" data-icon="grid" data-transition="flow">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="main" class="ui-content">
+			<h1>Contact me</h1>
+			<form>
+				<label for="essay">Tell us what you think</label>
+				<textarea name="essay" id="essay" placeholder="tell us"></textarea>
+				<label for="essay">Rate us out of 10</label>
+				<input type="range" name="rate" id="rate" min="0" max ="10"/>
+				<input type="submit" name="go" id="go" value="Rate our app"/>
+			</form>
+
+		</div>
+		<div data-role="footer">
+			<h1>&copy; Star Co. 2014</h1>
+		</div>
+	</div>
+
+
+</body>
+</html>
